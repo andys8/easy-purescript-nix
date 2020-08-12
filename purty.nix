@@ -20,11 +20,11 @@ pkgs.stdenv.mkDerivation rec {
   src = if pkgs.stdenv.isDarwin
   then pkgs.fetchurl {
     url = "https://bintray.com/joneshf/generic/download_file?file_path=purty-6.2.0-osx.tar.gz";
-    sha256 = "1nl87ajix0kzz7l6my1nj22zra4pcz7mp6kb730p2a9jxdk37f12";
+    sha256 = "1d81xkhwnkgkdxc91d0knqixbhm5wgkc173m9kzlqzyhvpg90d64";
   }
   else pkgs.fetchurl {
     url = "https://bintray.com/joneshf/generic/download_file?file_path=purty-6.2.0-linux.tar.gz";
-    sha256 = "052m7wnaz7d20amsprps02j65qywa4r0n873f444g6db9alvazrv";
+    sha256 = "1p6yy8qd7iwm6qw2zmv2m0ikm00xfj302q9arigxgh5kzsmrzg5i";
   };
 
   buildInputs = [ pkgs.zlib pkgs.gmp pkgs.ncurses5 ];
